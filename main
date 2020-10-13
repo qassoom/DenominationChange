@@ -1,0 +1,143 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    
+	    int ac = 0;
+	    int bc = 0;
+	    int cc = 0;
+	    int dc = 0;
+	    int ec = 0;
+	    int fc = 0;
+	    
+	    float x = 311.1f;
+	    System.out.println("Amount= BD" + x);
+	    
+	    int ad = 20;
+	    int bd = 10;
+	    int cd = 5;
+	    int dd = 1;
+	    float ed = 0.5f;
+	    float fd = 0.1f;
+	    
+	    System.out.println("Bank Notes = BD "+ad+", BD " +bd+", BD "+cd+" BD "+dd+" BD "+ed+" BD "+fd);
+
+	    
+	
+
+	    
+    // BD 20 denominator count  
+		while (x>0){
+		    x = x - ad;
+		    ac = ac + 1;
+		}
+		
+		if (x < 0)
+		{
+		    ac = ac - 1;   
+            x = x + ad;
+		}
+		
+		
+	    System.out.println("Bank Notes Count: BD20 = "+ac);
+	//////////////////////////////////////////////////////////////
+
+		
+    // BD 10 denominator count  
+		while (x>0){
+		    x = x - bd;
+		    bc = bc + 1;
+		}
+		
+		if (x < 0)
+		{
+		    bc = bc - 1;   
+            x = x + bd;
+		}
+
+		
+		
+	    System.out.println("Bank Notes Count: BD10 = "+bc);
+	//////////////////////////////////////////////////////////////
+	
+	    
+	// BD 5 denominator count  
+		while (x>0){
+		    x = x - cd;
+		    cc = cc + 1;
+		}
+		
+		if (x < 0)
+		{
+		    cc = cc - 1;   
+            x = x + cd;
+		}
+
+		
+		
+	    System.out.println("Bank Notes Count: BD5 = "+cc);
+	//////////////////////////////////////////////////////////////
+	
+	    
+	// BD 1 denominator count  
+		while (x>0){
+		    x = x - dd;
+		    dc = dc + 1;
+		}
+		
+		if (x < 0){
+		    dc = dc - 1;   
+            x = x + dd;
+		}
+
+		
+		
+	    System.out.println("Bank Notes Count: BD1 = "+dc);
+    //////////////////////////////////////////////////////////////
+    
+    
+    // BD 0.5 denominator count  
+		while (x>0){
+		    x = x - ed;
+		    ec = ec + 1;
+		}
+		
+		if (x < 0)
+		{
+		    ec = ec - 1;   
+            x = x + ed;
+		}
+		
+		
+	    System.out.println("Bank Notes Count: BD 0.5 = "+ec);
+	//////////////////////////////////////////////////////////////
+	
+	
+	// BD 0.1 denominator count  
+		while (x>0){
+		    x = x - fd;
+		    fc = fc + 1;
+		}
+		
+		if (x < 0)
+		{
+		    fc = fc - 1;   
+            x = x + fd;
+		}
+		
+		
+	    System.out.println("Bank Notes Count: BD 0.1 = "+fc);
+	//////////////////////////////////////////////////////////////
+	    
+	}  
+	
+}
+
+
